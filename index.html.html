@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ضد التنمر - عون بالكود</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#667eea;--purple2:#764ba2;--green:#10b981;--red:#ef4444;--bg:#faf7ff;--card:#fff;--border:#ede6ff;--text:#1a1333;--muted:#6b5a8a}
+*{font-family:Cairo,sans-serif;box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);line-height:1.6}
+.header{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+.logo{font-size:24px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted);font-weight:700;font-size:12px;padding:6px 12px;border-radius:999px;background:#f5f0ff}
+.hero{text-align:center;padding:40px 20px;background:linear-gradient(180deg,#f5f0ff,var(--bg))}
+.hero h1{font-size:28px;font-weight:900}.btn{padding:10px 24px;border-radius:12px;border:none;font-weight:900;cursor:pointer;background:linear-gradient(135deg,var(--purple),var(--purple2));color:#fff}
+.section{max-width:900px;margin:0 auto;padding:32px 20px}
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 4px 16px rgba(102,126,234,.1)}
+.game{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;margin-top:16px}
+.question{font-weight:900;font-size:16px;margin-bottom:12px}
+.options{display:flex;flex-direction:column;gap:8px}
+.option{padding:12px;border-radius:10px;border:1.5px solid var(--border);background:#f5f0ff;cursor:pointer;font-weight:700;font-size:13px;transition:.2s}
+.option.ok{background:var(--green)!important;color:#fff!important;border-color:var(--green)!important}
+.option.bad{background:var(--red)!important;color:#fff!important;border-color:var(--red)!important;animation:shake .4s}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.footer{border-top:1px solid var(--border);background:var(--card);padding:24px 20px;margin-top:32px;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="logo">❤️</div>
+<nav class="nav">
+<a href="#poster">بوستر</a>
+<a href="#video">الفيديو</a>
+<a href="#game">اللعبة</a>
+<a href="#actions">ماذا أفعل؟</a>
+<a href="#types">أنواع التنمر</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>كلمة على الإنترنت ممكن تفرق 💜</h1>
+<p>مشروع توعوي ضد التنمر - كن شاهد إيجابي</p>
+<br>
+<button class="btn" onclick="document.getElementById('game').scrollIntoView({behavior:'smooth'})">ابدا</button>
+</div>
+
+<div class="section" id="types">
+<h2>أنواع التنمر</h2>
+<div class="types">
+<div class="card"><h3>تنمر لفظي</h3><p>شتيمة، سخرية، تهديد</p></div>
+<div class="card"><h3>تنمر إلكتروني</h3><p>تعليقات مسيئة، نشر صور بدون إذن</p></div>
+<div class="card"><h3>تنمر اجتماعي</h3><p>عزل، إشاعات، تجاهل</p></div>
+</div>
+</div>
+
+<div class="section" id="actions">
+<h2>ماذا أفعل لو شفت تنمر؟</h2>
+<div class="types">
+<div class="card"><h3>1- دافع 🛡️</h3><p>قول: كده غلط، وقف</p></div>
+<div class="card"><h3>2- ادعم ❤️</h3><p>ابعت رسالة: أنت رائع</p></div>
+<div class="card"><h3>3- بلغ 📢</h3><p>احفظ دليل وبلغ معلم</p></div>
+</div>
+</div>
+
+<div class="section" id="video">
+<h2>الفيديو التوعوي</h2>
+<p>عمرك فكرت ان كلمة واحدة ممكن تفرح انسان او تجرح قلبه؟ خليك إيجابي 💜</p>
+<div style="margin-top:12px;padding:20px;background:var(--card);border-radius:16px;border:1px solid var(--border);text-align:center">
+<p>🎬 الفيديو: ggh.mp4 (موجود مع المشروع)</p>
+</div>
+</div>
+
+<div class="section" id="poster">
+<h2>بوستر - أوقفوا التنمر!</h2>
+<div class="card" style="text-align:center">
+<p style="font-size:48px">🛑</p>
+<h3>أوقفوا التنمر!</h3>
+<p>كن لطيفاً، كن محترماً، كن صديقاً</p>
+<p style="margin-top:8px;font-size:11px">#أوقفوا_التنمر #اختر_اللطف</p>
+</div>
+</div>
+
+<div class="section" id="game">
+<div class="game">
+<h2>لعبة ضد التنمر</h2>
+<p style="font-size:12px;color:var(--muted)">اختار الكارت الصح، لو صح هايبقى اخضر لو غلط هايبقى احمر</p>
+<div style="margin-top:12px">
+<div id="q" class="question"></div>
+<div id="opts" class="options"></div>
+<div id="hint" style="margin-top:10px;font-size:12px;color:var(--muted);display:none"></div>
+<div style="margin-top:12px;font-weight:900">نتيجتك: <span id="sc">0</span>/5</div>
+<button id="next" class="btn" style="margin-top:10px;display:none">التالي</button>
+<button id="restart" class="btn" style="margin-top:10px;display:none;background:#1a1333">إعادة</button>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+<div>❤️ ضد التنمر - معًا لمساحة آمنة</div>
+<div style="margin-top:4px">#AnaWitness - مشروع طلابي</div>
+</footer>
+
+<script>
+const QUIZ=[
+{q:"شفت تعليق 'أنت فاشل' لزميلك، تعمل إيه؟",opts:[{t:"أرد بشتيمة",c:false},{t:"أقول: كده غلط، وقف وأدعم زميلي",c:true},{t:"أعمل لايك وأضحك",c:false}],h:"الدفاع بدون تنمر هو الصح"},
+{q:"وصلك سكرين شوت خاص لزميلة، تتصرف ازاي؟",opts:[{t:"أنشره",c:false},{t:"أحتفظ بيه كدليل وأبلغ معلم بدون نشر",c:true},{t:"أعدله للسخرية",c:false}],h:"الخصوصية أمان"},
+{q:"غريب طلب عنوان بيتك، ده آمن؟",opts:[{t:"آمن أبعته",c:false},{t:"مش آمن، أحظر وأبلغ",c:true},{t:"آمن لو قال زميل",c:false}],h:"معلوماتك خط أحمر"},
+{q:"زميلك حزين من تنمر، تقوله إيه؟",opts:[{t:"أنت رائع - I think you're awesome",c:true},{t:"استحمل",c:false},{t:"أنت حساس",c:false}],h:"كلمة طيبة بتفرق"},
+{q:"جالك رابط 'اكسب آيفون مجاناً' تعمل إيه؟",opts:[{t:"أضغط بسرعة",c:false},{t:"أتأكد من مصدره ومش أضغط",c:true},{t:"أبعته لصحابي",c:false}],h:"الروابط المجهولة خطر"}
+];
+let qi=0,score=0,answered=false;
+const qEl=document.getElementById('q'),optsEl=document.getElementById('opts'),hintEl=document.getElementById('hint'),scEl=document.getElementById('sc'),nextEl=document.getElementById('next'),restartEl=document.getElementById('restart');
+function render(){
+answered=false;
+const cur=QUIZ[qi];
+qEl.textContent=`(${qi+1}/5) ${cur.q}`;
+optsEl.innerHTML='';
+hintEl.style.display='none';
+nextEl.style.display='none';
+cur.opts.forEach((o,i)=>{
+const d=document.createElement('div');
+d.className='option';
+d.textContent=o.t;
+d.onclick=()=>select(i);
+optsEl.appendChild(d);
+});
+}
+function select(i){
+if(answered)return;
+answered=true;
+const cur=QUIZ[qi];
+const els=optsEl.querySelectorAll('.option');
+els.forEach((el,idx)=>{
+el.style.pointerEvents='none';
+if(cur.opts[idx].c) el.classList.add('ok');
+});
+if(cur.opts[i].c){score++;scEl.textContent=score;}
+else{els[i].classList.add('bad');}
+hintEl.textContent='💡 '+cur.h;
+hintEl.style.display='block';
+if(qi<QUIZ.length-1){nextEl.style.display='inline-block';nextEl.textContent='السؤال التالي';}
+else{nextEl.style.display='inline-block';nextEl.textContent=`خلصت! ${score}/5 🎉`;restartEl.style.display='inline-block';}
+}
+nextEl.onclick=()=>{
+if(qi<QUIZ.length-1){qi++;render();}
+else{qEl.textContent=`🎉 خلصت! نتيجتك ${score}/5`;optsEl.innerHTML=`<div style="padding:20px;background:#f5f0ff;border-radius:12px;text-align:center;font-weight:900">${score>=4?'💜 ممتاز! أنت شاهد إيجابي':'👏 كمل، كل كلمة بتفرق'}</div>`;hintEl.style.display='none';nextEl.style.display='none';}
+};
+restartEl.onclick=()=>{qi=0;score=0;scEl.textContent='0';restartEl.style.display='none';render();};
+render();
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});});});
+</script>
+</body>
+</html>
